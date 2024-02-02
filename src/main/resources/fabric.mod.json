@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "shellcommands",
+  "version": "${version}",
+  "name": "ShellCommands",
+  "description": "A mod to bring some features from the linux shell to minecraft commands",
+  "authors": [
+    "Blackilykat"
+  ],
+  "contact": {
+    "repo": "https://github.com/blackilykat/ShellCommands"
+  },
+  "license": "MIT",
+  "icon": "assets/shellcommands/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "server": [
+      "dev.blackilykat.shellcommands.ShellCommands"
+    ]
+  },
+  "mixins": [
+    "shellcommands.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
